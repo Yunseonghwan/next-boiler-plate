@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint/eslint-plugin", "prettier", "tailwindcss"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": { "jsx": true }
+  },
+  "rules": {
+    "no-console": ["warn", { "allow": ["error"] }],
+    "import/prefer-default-export": "off",
+    "prettier/prettier": "error",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/jsx-key": "error",
+    "no-unused-vars": ["error", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
